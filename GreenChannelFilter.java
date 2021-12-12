@@ -26,9 +26,8 @@ public class GreenChannelFilter extends Filter
     {
         int height = image.getHeight();
         int width = image.getWidth();
-        for(int y = 0; y < height; y++) {
-            for(int x = 0; x < width; x++) 
-            {
+        for (int y = 0; y < height; y++) {
+            for (int x = 0; x < width; x++) {
                 Color pixel = image.getPixel(x, y);
                 int green = pixel.getGreen();
                 image.setPixel(x, y, new Color(green, green, green));
