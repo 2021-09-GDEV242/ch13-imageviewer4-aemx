@@ -257,6 +257,7 @@ public class ImageViewer
         filterList.add(new BlueTintFilter("Blue Tint"));
         filterList.add(new WorholFilter("Worhol"));
         filterList.add(new FlippedWorholFilter("Flipped Worhol"));
+        filterList.add(new PixelFilter("Pixelation"));
         // Return the list of filters
         return filterList;
     }
