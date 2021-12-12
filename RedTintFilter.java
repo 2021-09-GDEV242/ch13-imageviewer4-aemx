@@ -28,8 +28,8 @@ public class RedTintFilter extends Filter
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
                 Color pixel = image.getPixel(x, y);
-                int gb = (pixel.getGreen() + pixel.getBlue()) / 2;
-                image.setPixel(x, y, new Color(168, gb, gb));
+                int red = pixel.getRed();
+                image.setPixel(x, y, new Color(red, 0, 0));
             }
         }
     }

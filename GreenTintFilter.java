@@ -28,8 +28,8 @@ public class GreenTintFilter extends Filter
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
                 Color pixel = image.getPixel(x, y);
-                int rb = (pixel.getRed() + pixel.getBlue()) / 2;
-                image.setPixel(x, y, new Color(rb, 168, rb));
+                int green = pixel.getGreen();
+                image.setPixel(x, y, new Color(0, green, 0));
             }
         }
     }
