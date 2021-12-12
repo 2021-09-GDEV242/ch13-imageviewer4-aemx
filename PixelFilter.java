@@ -27,9 +27,6 @@ public class PixelFilter extends Filter
         int width = image.getWidth();
         OFImage newImage = image;
         int square = 16;
-        // get pixel of top left corner
-        // repeat for x-y section
-        // move to next square
         for (int dy = 1; dy <= square; dy++) {
             for (int dx = 1; dx <= square; dx++) {
                 // set bounds

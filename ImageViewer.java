@@ -258,6 +258,7 @@ public class ImageViewer
         filterList.add(new WorholFilter("Worhol"));
         filterList.add(new FlippedWorholFilter("Flipped Worhol"));
         filterList.add(new PixelFilter("Pixelation"));
+        filterList.add(new RainbowFilter("Rainbow"));
         // Return the list of filters
         return filterList;
     }
