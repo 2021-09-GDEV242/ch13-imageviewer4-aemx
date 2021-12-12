@@ -243,15 +243,19 @@ public class ImageViewer
     private List<Filter> createFilters()
     {
         List<Filter> filterList = new ArrayList<>();
+        // Stock filters
         filterList.add(new DarkerFilter("Darker"));
         filterList.add(new LighterFilter("Lighter"));
         filterList.add(new ThresholdFilter("Threshold"));
         filterList.add(new FishEyeFilter("Fish Eye"));
-        // Add my filters
+        // My filters
         filterList.add(new RedChannelFilter("Red Channel"));
         filterList.add(new GreenChannelFilter("Green Channel"));
         filterList.add(new BlueChannelFilter("Blue Channel"));
-       
+        filterList.add(new RedTintFilter("Red Tint"));
+        filterList.add(new GreenTintFilter("Green Tint"));
+        filterList.add(new BlueTintFilter("Blue Tint"));
+        // Return the list of filters
         return filterList;
     }
     
